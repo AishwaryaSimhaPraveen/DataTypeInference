@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processed Data</title>
+</head>
+<body>
+    <h2>Processed Data</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Column Name</th>
+                <th>Inferred Data Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in data %}
+            <tr>
+                <td>{{ item.column_name }}</td>
+                <td>{{ item.inferred_data_type }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
